@@ -2,11 +2,10 @@
   "name": "csv-import-data-lib",
   "version": "1.0.0",
   "description": "Biblioteca destinada ao tratamento de importação de dados via arquivo csv para objetos em Javascript.",
-  "main": "./src/index.js",
+  "main": "./src/main.js",
   "type": "module",
   "scripts": {
-    "start": "node ./src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./src/main.js"
   },
   "repository": {
     "type": "git",
