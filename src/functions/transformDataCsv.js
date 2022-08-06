@@ -1,4 +1,4 @@
-import replaceByIndex from "./utils/replaceByIndex.js";
+import replaceByIndex from "../utils/replaceByIndex.js";
 
 function transformDataCsv(data) {
   const csvHeader = data.slice(0, data.indexOf("\n")).split(",");
