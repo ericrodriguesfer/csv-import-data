@@ -1,0 +1,33 @@
+{
+  "name": "csv-import-data-lib",
+  "version": "1.0.0",
+  "description": "Biblioteca destinada ao tratamento de importação de dados via arquivo csv para objetos em Javascript.",
+  "main": "./src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericrodriguesfer/csv-import-data-lib.git"
+  },
+  "keywords": [
+    "csv",
+    "javascript",
+    "data",
+    "import",
+    "json",
+    "lib",
+    "biblioteca"
+  ],
+  "author": "Eric Rodrigues Ferrreira - ericrodriguesfer <er601432@gmail.com | ericdesenvolvedor7@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericrodriguesfer/csv-import-data-lib/issues"
+  },
+  "homepage": "https://github.com/ericrodriguesfer/csv-import-data-lib#readme",
+  "dependencies": {
+    "filereader": "^0.10.3"
+  }
+}
