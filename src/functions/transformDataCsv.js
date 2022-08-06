@@ -1,16 +1,6 @@
-import FileReader from "filereader";
-import fs from "fs";
-const data = fs.readFileSync("data.csv", "utf-8");
+import replaceByIndex from "./utils/replaceByIndex.js";
 
-const fileReader = new FileReader();
-
-function replaceByIndex(str, index, replacement) {
-  return (
-    str.substr(0, index) + replacement + str.substr(index + replacement.length)
-  );
-}
-
-function csvFileToArrayImportData(data) {
+function transformDataCsv(data) {
   const csvHeader = data.slice(0, data.indexOf("\n")).split(",");
   const csvRows = data.slice(data.indexOf("\n") + 1).split("\n");
 
@@ -56,23 +46,4 @@ function csvFileToArrayImportData(data) {
   return array;
 }
 
-function importCsv(csv) {
-  if (csv) {
-    fileReader.onload = function (event) {
-      const text = event.target.result;
-      csvFileToArrayImportData(text);
-    };
-
-    fileReader.readAsText(csv);
-  }
-}
-
-// (async () => {
-//   console.log("OPA");
-//   const test = csvFileToArrayImportData(data);
-
-//   console.log(test);
-//   //await importCsv(data);
-// })();
-
-export { csvFileToArrayImportData, importCsv };
+export default transformDataCsv;
