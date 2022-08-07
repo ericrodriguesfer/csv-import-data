@@ -71,11 +71,11 @@ Após isso, a mesma já estará em seu projeto, para a utilizar é simples, como
     ```json
     [
         {
-            name: "Sebartião", 
+            name: "Sebartião",
             age: 21
         },
         {
-            name: "Irineu", 
+            name: "Irineu",
             age: 33
         }
     ]
@@ -106,11 +106,11 @@ Após isso, a mesma já estará em seu projeto, para a utilizar é simples, como
     ```json
     [
         {
-            animal: "Patolino", 
+            animal: "Patolino",
             brothers: ["Goku", "Freeza", "Cell"]
         },
         {
-            animal: "Perna Longa", 
+            animal: "Perna Longa",
             brothers: ["Pikachu", "Mew"]
         }
     ]
@@ -149,11 +149,11 @@ Após isso, a mesma já estará em seu projeto, para a utilizar é simples, como
     ```json
     [
         {
-            name: "Sebartião", 
+            name: "Sebartião",
             age: 21
         },
         {
-            name: "Irineu", 
+            name: "Irineu",
             age: 33
         }
     ]
@@ -184,11 +184,11 @@ Após isso, a mesma já estará em seu projeto, para a utilizar é simples, como
     ```json
     [
         {
-            animal: "Patolino", 
+            animal: "Patolino",
             brothers: ["Goku", "Freeza", "Cell"]
         },
         {
-            animal: "Perna Longa", 
+            animal: "Perna Longa",
             brothers: ["Pikachu", "Mew"]
         }
     ]
