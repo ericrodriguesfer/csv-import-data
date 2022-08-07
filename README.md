@@ -7,6 +7,12 @@ Está é uma biblioteca que foi proposta como solução a uma problemática enco
 * Javascript
 * FileReader
 
+## Exemplos de uso da biblioteca
+
+* [examplos](https://github.com/ericrodriguesfer/csv-import-data/tree/master/examples)
+
+    * [exemplo-função-transformDataCsv](https://github.com/ericrodriguesfer/csv-import-data/tree/master/examples/transform-data-csv)
+
 ## Funcionalidades da biblioteca
 
 * ```transformDataCsv```
@@ -29,27 +35,19 @@ yarn add csv-import-data           # Opção 03
 
 Após isso, a mesma já estará em seu projeto, para a utilizar é simples, como irei expor nos exemplos abaixo:
 
-* Realizar a importação da biblioteca, de diferentes formas:
+* Realizar a importação da biblioteca:
 
     ```js
-    import {importDataFromCsv, transformDataCsv} from "csv-import-data";
+    import { importDataFromCsv, transformDataCsv } from "csv-import-data";
     ```
 
-    Essa importação é utilizando as versões mais recentes do Javascript e suas funcionalidades, onde realizar a importação utilizando a cláusula import e etc, e basicamente realizamos a importação e podemos desestruturar apenas umas ou as duas funções da biblioteca para as usar como melhor preferir. 
-
-    ```js
-    const csvimportdata = require("csv-import-data");
-    ```
-
-    Essa importação já é a mais antiga, mas também ainda funcional dentro do ecossistema que envolve o Javascript, onde basicamente realizamos a importação atravéz da cláusula require, e a atribuimos a uma variável dentro do escopo do código, e podemos utilizar os recursos da mesma em forma de objeto e método, como será exposto mais abaixo.
-
-* Utilizar de a biblioteca:
+* Utilizar a biblioteca:
 
     ### Função transformDataCsv:
 
 
     ```js
-    import {transformDataCsv} from "csv-import-data";
+    import { transformDataCsv } from "csv-import-data";
 
     /*
      Aqui assumisse que foi feita a leitura do csv de alguma forma. E que o mesmo está atribuído a uma variável chamada data.
@@ -80,21 +78,7 @@ Após isso, a mesma já estará em seu projeto, para a utilizar é simples, como
         }
     ]
     ```
-    Caso esteja usando a outra configuração de projeto, onde a chamada a biblioteca seja feita com o require:
-
-    ```js
-    const csvImportData = require("csv-import-data");
-
-    /*
-     Aqui assumisse que foi feita a leitura do csv de alguma forma. E que o mesmo está atribuído a uma variável chamada data.
-    */
-
-    const result = csvImportData.transformDataCsv(data);
-
-    console.log(result);
-    ```
-    
-    Assumindo que o arquivo .csv tenha sido uma tabela como essa abaixo:
+    Assumindo um .csv um pouco diferente do exposto acima, onde o mesmo contêm campos dispostos em lista ou array, como o seguinte:
 
     | animal  | brothers   |
     | ------- | -------- |
@@ -115,7 +99,7 @@ Após isso, a mesma já estará em seu projeto, para a utilizar é simples, como
         }
     ]
     ```
-    Onde pode-se observar que a biblioteca realizar o tratamento de valores dispostos em formato de array também. Desde de que estejam seguindo os princípios de valores em lista em .csv, que é dentro de aspas duplas separados por vírgula, onde a tabela acima estruturalmente estaria assim:
+    Onde pode-se observar que a biblioteca realiza o tratamento de valores dispostos em formato de array também. Desde de que estejam seguindo os princípios de valores em lista em .csv, que é dentro de aspas duplas separados por vírgula, onde a tabela acima estruturalmente estaria assim:
 
     ```csv
     animal,brothers
@@ -127,7 +111,7 @@ Após isso, a mesma já estará em seu projeto, para a utilizar é simples, como
 
 
     ```js
-    import {importDataFromCsv} from "csv-import-data";
+    import { importDataFromCsv } from "csv-import-data";
 
     /*
      Aqui assumisse que foi feito o pré-carregamento do arquivo .csv. E que o mesmo está atribuído a uma variável chamada data.
@@ -137,62 +121,8 @@ Após isso, a mesma já estará em seu projeto, para a utilizar é simples, como
 
     console.log(result);
     ```
-    Assumindo que o arquivo .csv tenha sido uma tabela como essa abaixo:
-
-    | name  | age   |
-    | ------- | -------- |
-    | Sebartião   | 21    |
-    | Irineu   | 33    |
-
-    O retorno vindo da biblioteca e que será impresso no console do código de exemplo acima, será o seguinte:
-
-    ```json
-    [
-        {
-            "name": "Sebartião",
-            "age": 21
-        },
-        {
-            "name": "Irineu",
-            "age": 33
-        }
-    ]
-    ```
-    Caso esteja usando a outra configuração de projeto, onde a chamada a biblioteca seja feita com o require:
-
-    ```js
-    const csvImportData = require("csv-import-data");
-
-    /*
-     Aqui assumisse que foi feito o pré-carregamento do arquivo .csv. E que o mesmo está atribuído a uma variável chamada data.
-    */
-
-    const result = csvImportData.importDataFromCsv(data);
-
-    console.log(result);
-    ```
+    O resultado de saída serãos os mesmos que foram expostos mais acima.
     
-    Assumindo que o arquivo .csv tenha sido uma tabela como essa abaixo:
-
-    | animal  | brothers   |
-    | ------- | -------- |
-    | Patolino   | Goku,Freeza,Cell    |
-    | Perna Longa   | Pikachu,Mew    |
-
-    O retorno vindo da biblioteca e que será impresso no console do código de exemplo acima, será o seguinte:
-
-    ```json
-    [
-        {
-            "animal": "Patolino",
-            "brothers": ["Goku", "Freeza", "Cell"]
-        },
-        {
-            "animal": "Perna Longa",
-            "brothers": ["Pikachu", "Mew"]
-        }
-    ]
-    ```
 
 ## Observações
 
