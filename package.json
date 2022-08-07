@@ -1,6 +1,6 @@
 {
   "name": "csv-import-data",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Biblioteca destinada ao tratamento de importação de dados via arquivo csv para objetos em Javascript.",
   "main": "./src/main.js",
   "type": "module",
