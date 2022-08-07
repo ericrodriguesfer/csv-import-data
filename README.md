@@ -71,12 +71,12 @@ Após isso, a mesma já estará em seu projeto, para a utilizar é simples, como
     ```json
     [
         {
-            name: "Sebartião",
-            age: 21
+            "name": "Sebartião",
+            "age": 21
         },
         {
-            name: "Irineu",
-            age: 33
+            "name": "Irineu",
+            "age": 33
         }
     ]
     ```
@@ -106,12 +106,12 @@ Após isso, a mesma já estará em seu projeto, para a utilizar é simples, como
     ```json
     [
         {
-            animal: "Patolino",
-            brothers: ["Goku", "Freeza", "Cell"]
+            "animal": "Patolino",
+            "brothers": ["Goku", "Freeza", "Cell"]
         },
         {
-            animal: "Perna Longa",
-            brothers: ["Pikachu", "Mew"]
+            "animal": "Perna Longa",
+            "brothers": ["Pikachu", "Mew"]
         }
     ]
     ```
@@ -149,12 +149,12 @@ Após isso, a mesma já estará em seu projeto, para a utilizar é simples, como
     ```json
     [
         {
-            name: "Sebartião",
-            age: 21
+            "name": "Sebartião",
+            "age": 21
         },
         {
-            name: "Irineu",
-            age: 33
+            "name": "Irineu",
+            "age": 33
         }
     ]
     ```
@@ -184,15 +184,16 @@ Após isso, a mesma já estará em seu projeto, para a utilizar é simples, como
     ```json
     [
         {
-            animal: "Patolino",
-            brothers: ["Goku", "Freeza", "Cell"]
+            "animal": "Patolino",
+            "brothers": ["Goku", "Freeza", "Cell"]
         },
         {
-            animal: "Perna Longa",
-            brothers: ["Pikachu", "Mew"]
+            "animal": "Perna Longa",
+            "brothers": ["Pikachu", "Mew"]
         }
     ]
     ```
+
 ## Observações
 
 * A biblioteca ainda está em desenvolvimento e evolução, assim podem ser encontrados bugs em seu uso, caso encontre algum, sinta-se a vontade de reportar o mesmo comigo, seja enviando um e-mail para o e-mail presente na última seção deste readme, ou mesmo abrindo uma issue aqui no GitHub mesmo em [criar issue](https://github.com/ericrodriguesfer/csv-import-data/issues).
