@@ -1,2 +1,3 @@
 node_modules
 data.csv
+!examples/transform-data-csv/data.csv
