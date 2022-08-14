@@ -2,10 +2,10 @@
 import { transformDataCsv } from "csv-import-data";
 
 // Importando o módulo fs do node, para tratamentos com arquivos e diretivas similares
-import fs from "fs";
+import { readFileSync } from "fs";
 
 // Fazendo a leitura e parseamento do arquivo data.csv que se encontra na raiz deste exemplo
-const dataCsv = fs.readFileSync("data.csv", "utf-8");
+const dataCsv = readFileSync("data.csv", "utf-8");
 
 // Chamando a função de transformação da biblioteca passando os dados parseados na linha anterior para a biblioteca realizar o devido tratamento
 const data = transformDataCsv(dataCsv);
